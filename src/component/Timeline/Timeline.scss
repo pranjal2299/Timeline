@@ -1,0 +1,177 @@
+.Timeline {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  border: 1px solid var(--grey-100);
+  margin-left: 0.4%;
+  width: 99.5% !important;
+  margin-bottom: 1%;
+  // margin-right: 1% !important;
+}
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+
+  /* align-items: center;
+    justify-content: center; */
+  // height: 150px;
+  // overflow: hidden;
+  position: relative;
+  padding: 0 !important;
+
+  .column {
+    width: 100%;
+    justify-content: center !important;
+    p {
+      margin-left: 3%;
+    }
+    .column2 {
+      text-align: center !important;
+      justify-content: center !important;
+      display: flex;
+      width: 100%;
+      height: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+.time-labels {
+  position: absolute;
+  top: 55%; /* Adjust the distance between timeline and labels */
+  display: flex;
+  color: var(--grey-700);
+  font-size: 9px;
+  font-weight: 600;
+  justify-content: space-between;
+  width: 99%;
+ 
+}
+.time-label{
+  text-align: center;
+  align-self: center;
+  flex-direction: column;
+  span{
+    margin-left: 8px;
+  }
+}
+.line {
+  width: 1px;
+  height: 20px;
+  border-right: 1px dashed var(--grey-400);
+  // border:1px solid blue;
+}
+
+.line-labels {
+  position: absolute;
+  top: 70%; /* Adjust the distance between timeline and labels */
+  // left: 1%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey-800);
+  font-size: 6px;
+  width: 97%;
+  margin-bottom: 0;
+}
+.line2-labels {
+  position: absolute;
+  top: 100%; /* Adjust the distance between timeline and labels */
+  // left: 1%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey-800);
+  font-size: 6px;
+  width: 97%;
+  margin-bottom: 0;
+}
+.legends {
+  height: 12px;
+  width: 12px;
+  margin: auto;
+  border-radius: 5px;
+  &-title {
+    font-size: 12px;
+    color: var(--grey-900);
+  }
+}
+//   .timeline {
+//     position: relative;
+//     width: 100%;
+//     height: 6px;
+//     margin :0;
+
+//   }
+
+//   .timeline-event {
+//     height: 100%;
+//     width: 100%;
+//     display: flex;
+//     align-items: flex-start;
+//     justify-content: center;
+//     flex-direction: column;
+//     font-size: 14px;
+//     color: #000000;
+//     position: absolute;
+//     top: -0px;
+//   }
+
+//   .event-time {
+//     margin-top: -50px;
+//     text-align: center;
+//   }
+
+.dt {
+  &-heading {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--grey-dark);
+    padding-top: 0.2%;
+  }
+}
+// .react-datepicker-wrapper{
+//     width : 50% !important;
+//     .react-datepicker__input-container input{
+//       height: 38px !important;
+//       width: 100% !important;
+//       color: #dac5ae;
+//       border-color: dac5ae;
+//       border : 0.5px solid #dac5ae;
+//       border-radius: 5px;
+//       text-align: center !important;
+
+//     }
+
+//     .datePickerInTimeLine{
+//       text-align: center !important;
+
+//     }
+// }
+.timeline {
+  position: relative;
+  height: 10px;
+  background-color: var(--success);
+  margin-top: 20px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-top: 3%;
+  margin-left: 0.5% !important;
+  margin-right: 2.5% !important;
+}
+
+.event {
+  position: absolute;
+  height: 100%;
+  border-radius: 100px;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.event:hover {
+  opacity: 1;
+}
+
+.event[data-reasoncat='Un Planned'] {
+  background-color: var(--danger);
+}
+
+.event[data-reasoncat='Planned'] {
+  background-color: var(--secondary1);
+}
