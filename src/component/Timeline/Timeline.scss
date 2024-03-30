@@ -1,16 +1,17 @@
 .Timeline {
-  background-color: var(--white-color);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  border: 1px solid var(--grey-100);
+  border: 1.5px solid lightgray;
   margin-left: 0.4%;
-  width: 99.5% !important;
+  border: 1px solid black !important;
+  // width: 99.5% !important;
   margin-bottom: 1%;
+  padding: 5px 20px;
   // margin-right: 1% !important;
 }
 .timeline-container {
   display: flex;
   flex-direction: column;
-
   /* align-items: center;
     justify-content: center; */
   // height: 150px;
@@ -38,11 +39,11 @@
   position: absolute;
   top: 55%; /* Adjust the distance between timeline and labels */
   display: flex;
-  color: var(--grey-700);
+  color: grey;
   font-size: 9px;
   font-weight: 600;
   justify-content: space-between;
-  width: 99%;
+  width: 100%;
  
 }
 .time-label{
@@ -56,7 +57,7 @@
 .line {
   width: 1px;
   height: 20px;
-  border-right: 1px dashed var(--grey-400);
+  border-right: 1px dashed lightgrey;
   // border:1px solid blue;
 }
 
@@ -66,20 +67,21 @@
   // left: 1%;
   display: flex;
   justify-content: space-between;
-  color: var(--grey-800);
+  color: rgb(62, 43, 43);
   font-size: 6px;
-  width: 97%;
+  width: 100%;
   margin-bottom: 0;
 }
 .line2-labels {
   position: absolute;
   top: 100%; /* Adjust the distance between timeline and labels */
+  
   // left: 1%;
   display: flex;
   justify-content: space-between;
-  color: var(--grey-800);
+  color: rgb(0, 0, 0) !important;
   font-size: 6px;
-  width: 97%;
+  width: 100%;
   margin-bottom: 0;
 }
 .legends {
@@ -89,7 +91,7 @@
   border-radius: 5px;
   &-title {
     font-size: 12px;
-    color: var(--grey-900);
+    color: grey;
   }
 }
 //   .timeline {
@@ -122,7 +124,7 @@
   &-heading {
     font-size: 18px;
     font-weight: 500;
-    color: var(--grey-dark);
+    color: grey;
     padding-top: 0.2%;
   }
 }
@@ -147,15 +149,82 @@
 .timeline {
   position: relative;
   height: 10px;
-  background-color: var(--success);
-  margin-top: 20px;
+  background-color: rgb(97, 155, 97);
+  margin-top: 10px;
   border-radius: 100px;
   overflow: hidden;
   margin-top: 3%;
   margin-left: 0.5% !important;
-  margin-right: 2.5% !important;
+  // margin-right: 2.5% !important;
 }
 
+.date-picker {
+  width: 100% !important;
+  // height: 30px;
+  text-align: center;
+  padding: 5px 0 !important;
+  background-color: var(--secondary2-trans-100);
+  border: none !important;
+  border-radius: 8px !important;
+  color: var(--secondary2);
+  font-size: 12px;
+  font-weight: 600;
+}
+.react-datepicker {
+  font-family: var(--font-para);
+  // height: 240px;
+  // overflow: hidden;
+  border: 1.5px solid var(--grey-100);
+  border-radius: 10px !important;
+  &-wrapper {
+    width: 100%;
+    // padding-right: calc(var(--bs-gutter-x) * .5);
+    // padding-left: calc(var(--bs-gutter-x) * .5);
+  }
+  &__header {
+    background-color: var(--secondary2-trans);
+    border-color: var(--secondary2-trans);
+    color: var(--primary) !important;
+    border-radius: 9px 9px 0px 0 !important;
+  }
+  &__navigation {
+    padding-top: 2%;
+    &-icon {
+      margin: auto;
+      padding: auto;
+    }
+  }
+  &__day {
+    border-radius: 10px;
+    width: 28px;
+    height: 28px;
+    border: 1.5px solid var(--secondary2-trans);
+    &--keyboard-selected {
+      background-color: var(--white-color);
+      border: 1.5px solid var(--secondary2);
+      outline: 2px solid var(--secondary2-trans);
+      color: var(--secondary2);
+    }
+    // &--today {
+    //   // background-image: var(--secondary-gradient);
+    // }
+
+    &:hover {
+      background-color: var(--secondary2-trans);
+      border: 1.5px solid var(--secondary2-trans);
+      border-radius: 10px;
+    }
+    &--selected {
+      background-image: var(--secondary-gradient);
+    }
+  }
+  // &__triangle::after{
+  //   // background-color: red !important;
+  //   // border-color:var(--secondary2-trans) !important;
+  //   border-color: red !important;
+
+  // }
+} 
 .event {
   position: absolute;
   height: 100%;
@@ -168,10 +237,15 @@
   opacity: 1;
 }
 
-.event[data-reasoncat='Un Planned'] {
-  background-color: var(--danger);
+.event[data-Category='Category2'] {
+  background-color: red;
 }
 
-.event[data-reasoncat='Planned'] {
-  background-color: var(--secondary1);
+.event[data-Category='Category1'] {
+  background-color: blue;
 }
+
+// .legends{
+//   display: flex !important;
+//   margin-bottom: 20px !important;
+// }

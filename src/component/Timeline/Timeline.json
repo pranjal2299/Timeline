@@ -1,116 +1,66 @@
-[
-    {
-        "id": 1,
-        "startTime": "2024-03-01 07:00:06 ",
-        "endTime": "2024-03-01 07:08:06 ",
-        "duration": "8.00",
-        "reason": [],
-        "Category": ""
-    },
-    {
-        "id": 2,
-        "startTime": "2024-03-01 07:24:36 ",
-        "endTime": "2024-03-01 07:38:26 ",
-        "duration": "13.83",
-        "reason": [
-            {
-                "_id": "65e18104685b08cf69233727",
-                "lineId": "ISGEC_1",
-                "plantId": "1022",
-                "machineID": "ISGEC_203T",
-                "startTime": "2024-03-01T07:24:36.000Z",
-                "endTime": "2024-03-01T07:38:26.000Z",
-                "reasonCode": "MB03",
-                "reasonDescrp": "Tea-Break",
-                "reasonSubCat": "Planned",
-                "reasonCat": "Planned",
-                "defaultReasonDescrp": "Tea-Break",
-                "status": "to be done ...",
-                "loginInfo": {
-                    "userId": 2,
-                    "email": "pranjal.gupta1@jbmgroup.com",
-                    "name": "Pranjal Gupta "
-                },
-                "splitInfo": {
-                    "startTimeReason": "2024-03-01T07:24:36.000Z",
-                    "endTimeReason": "2024-03-01T07:38:26.000Z",
-                    "subReasonDuration": 829800
-                },
-                "subReasonDurationMinutes": 13.83
-            }
-        ],
-        "Category": "Planned"
-    },
-    {
-        "id": 3,
-        "startTime": "2024-03-01 08:21:06 ",
-        "endTime": "2024-03-01 08:38:16 ",
-        "duration": "17.16",
-        "reason": [],
-        "Category": ""
-    },
-    {
-        "id": 4,
-        "startTime": "2024-03-01 09:20:46 ",
-        "endTime": "2024-03-01 09:27:26 ",
-        "duration": "6.66",
-        "reason": [],
-        "Category": ""
-    },
-    {
-        "id": 5,
-        "startTime": "2024-03-01 09:58:06 ",
-        "endTime": "2024-03-01 10:07:16 ",
-        "duration": "9.16",
-        "reason": [],
-        "Category": ""
-    },
-    {
-        "id": 6,
-        "startTime": "2024-03-01 10:23:46 ",
-        "endTime": "2024-03-01 10:26:16 ",
-        "duration": "2.50",
-        "reason": [],
-        "Category": ""
-    },
-    {
-        "id": 7,
-        "startTime": "2024-03-01 10:40:56 ",
-        "endTime": "2024-03-01 10:46:56 ",
-        "duration": "6.00",
-        "reason": [],
-        "Category": ""
-    },
-    {
-        "id": 8,
-        "startTime": "2024-03-01 10:54:36 ",
-        "endTime": "2024-03-01 11:33:26 ",
-        "duration": "38.83",
-        "reason": [],
-        "Category": ""
-    },
-    {
-        "id": 9,
-        "startTime": "2024-03-01 13:02:26 ",
-        "endTime": "2024-03-01 13:22:46 ",
-        "duration": "20.33",
-        "reason": [],
-        "Category": ""
-    },
-    {
-        "id": 10,
-        "startTime": "2024-03-01 14:06:16 ",
-        "endTime": "2024-03-01 14:11:36 ",
-        "duration": "5.33",
-        "reason": [],
-        "Category": ""
-    },
-    {
-        "id": 11,
-        "startTime": "2024-03-01 14:17:56 ",
-        "endTime": "2024-03-01 14:24:06 ",
-        "duration": "6.16",
-        "reason": [],
-        "Category": ""
-    }
-]
+
+    [
+        {
+            "id": 1,
+            "startTime": "2024-03-18 07:00:09 ",
+            "endTime": "2024-03-18 07:06:59 ",
+            "duration": "6.83",
+            "Category": ""
+        },
+        {
+            "id": 2,
+            "startTime": "2024-03-18 07:09:49 ",
+            "endTime": "2024-03-18 07:40:39 ",
+            "duration": "30.50",
+            "Category": ""
+        },
+        {
+            "id": 3,
+            "startTime": "2024-03-18 07:42:09 ",
+            "endTime": "2024-03-18 07:53:09 ",
+            "duration": "11.00",
+            "Category": "Category1"
+        },
+        {
+            "id": 4,
+            "startTime": "2024-03-18 07:54:49 ",
+            "endTime": "2024-03-18 08:33:09 ",
+            "duration": "38.33",
+            "Category": ""
+        },
+        {
+            "id": 5,
+            "startTime": "2024-03-18 08:33:59 ",
+            "endTime": "2024-03-18 08:36:09 ",
+            "duration": "2.16",
+            "Category": "Category2"
+        },
+        {
+            "id": 6,
+            "startTime": "2024-03-18 08:44:09 ",
+            "endTime": "2024-03-18 08:50:39 ",
+            "duration": "6.50",
+            "Category": ""
+        },
+        {
+            "id": 7,
+            "startTime": "2024-03-18 08:51:59 ",
+            "endTime": "2024-03-18 08:55:09 ",
+            "duration": "3.16",
+            "Category": ""
+        },
+        {
+            "id": 8,
+            "startTime": "2024-03-18 09:05:39 ",
+            "endTime": "2024-03-18 09:12:39 ",
+            "duration": "7.00",
+            "Category": ""
+        },
+        {
+            "id": 9,
+            "startTime": "2024-03-18 10:56:40 ",
+            "endTime": "2024-03-18 11:36:50 ",
+            "duration": "40.16",
+            "Category": ""
+        }
+    ]
