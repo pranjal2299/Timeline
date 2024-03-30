@@ -6,7 +6,7 @@ import "./Timeline.scss";
 export const TimelineMain = () => {
   const startTime = 1710725400000;
   const endTime = 1710756000000;
-  const title = "{TITLE}";
+  const title = "{test}";
   
   const legendItems = [
     { color: 'blue', label: 'Category1' },
